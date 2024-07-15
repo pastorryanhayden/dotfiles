@@ -1,0 +1,13 @@
+# Hide dotfiles that include sensative information.
+
+# rclone includes aws creds
+rclone/
+
+# github-copilot includes credentials
+github-copilot/
+
+# The hidden airtable file has a credential in it.
+.airtableblocksrc.json
+
+# There is no reason to track Valet files 
+valet/ 
