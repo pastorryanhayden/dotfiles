@@ -3,9 +3,10 @@
 export WHITE=0xffffffff
 
 # -- Teal Scheme --
-export BAR_COLOR=0xff142E42
+export BAR_COLOR=0x00142E42
 export ITEM_BG_COLOR=0xff3b4261
 export ACCENT_COLOR=0xff7dcfff
+export TEXT_COLOR=0xFF142E42
 
 # -- Gray Scheme --
 # export BAR_COLOR=0xff101314
