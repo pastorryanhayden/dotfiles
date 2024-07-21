@@ -1,0 +1,38 @@
+" BASIC SETTINGS
+
+" enter the current millenium
+set nocompatible
+
+" enable syntax and plugins
+syntax enable
+filetype plugin on
+set termguicolors
+let g:netrw_banner=0
+
+" FINDING FILES
+
+" search down into subfolders
+" Provide tab completion for all file-related tasks
+set path+=**
+
+" display all matching files when we tab complete
+set wildmenu
+
+" NOW WE CAN
+" - Hit tab to :find by partial search
+" - Use * to make it fuzzy
+
+" THINGS TO CONSIDER
+" :b lets you autocomplete any open buffer 
+
+call plug#begin()
+
+" List your plugins here
+Plug 'jwalton512/vim-blade'
+Plug 'GlennLeo/cobalt2'
+Plug 'Rigellute/rigel'
+Plug 'vim-airline/vim-airline'
+call plug#end()
+let g:rigel_airline = 1
+let g:airline_theme = 'rigel'
+colorscheme cobalt2
