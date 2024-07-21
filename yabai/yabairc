@@ -28,3 +28,22 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^CleanShot X$" manage=off
+
+# Always open certain apps in certain spaces
+
+yabai -m rule --add app="^Create Booklet 2" space=6
+yabai -m rule --add app="^Finder" space=6
+yabai -m rule --add app="^Pages" space=5
+yabai -m rule --add app="^Affinity Publisher 2" space=5
+yabai -m rule --add app="^Preview" space=6
+yabai -m rule --add app="^Messenger" space=4
+yabai -m rule --add app="^Obsidian" space=3
+yabai -m rule --add app="^Google Chrome" space=1
+yabai -m rule --add app="^Marked 2" space=6
+yabai -m rule --add app="^WezTerm" space=2
+yabai -m rule --add app="^HEY" space=4
+yabai -m rule --add app="^Proclaim" space=5
+yabai -m rule --add app="^TablePlus" space=5
+yabai -m rule --add app="^Transmit" space=5
+
+
