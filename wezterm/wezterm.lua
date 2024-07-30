@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
 
-config.color_scheme = "tokyonight_moon"
+config.color_scheme = "Tokyo Night Storm"
 
 config.font_size = 19
 
