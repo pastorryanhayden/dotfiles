@@ -7,7 +7,8 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Cobalt Neon"
+
+config.color_scheme = "tokyonight_moon"
 
 config.font_size = 19
 

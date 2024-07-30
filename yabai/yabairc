@@ -45,5 +45,16 @@ yabai -m rule --add app="^HEY" space=4
 yabai -m rule --add app="^Proclaim" space=5
 yabai -m rule --add app="^TablePlus" space=5
 yabai -m rule --add app="^Transmit" space=5
+yabai -m rule --add app="^e-Sword X" space=5
+yabai -m rule --add app="^Easy CSV Editor" space=5
+yabai -m rule --add app="^Invoker" space=5
+yabai -m rule --add app="^Firefox" space=1
+yabai -m rule --add app="^Safari" space=1
+yabai -m rule --add app="^Arc" space=1
+yabai -m rule --add app="^Freeform" space=5
+yabai -m rule --add app="^Opal" space=4
+
+
+
 
 
