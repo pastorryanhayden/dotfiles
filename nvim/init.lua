@@ -340,10 +340,6 @@ require('lazy').setup({
       end, { desc = '[S]earch [N]eovim files' })
     end,
   },
-  {
-    'stevearc/conform.nvim',
-    opts = {},
-  },
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -600,6 +596,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         blade = { 'blade-formatter' },
+        css = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
