@@ -1,0 +1,31 @@
+$sermon = Sermon::all();
+$sermons = Sermon::all();
+foreach($sermons as $sermon)
+{
+$sermon->delete();
+}
+exit()
+Sermon::truncate();
+Series::truncate();
+Speaker::truncate();
+exit
+Testimony::truncate();
+exit
+$church = Church::where('id',1);
+$active = new Group;
+exit
+$church = Church::where('id',1);
+$active = new Group;
+use App\Models\Group;
+$active = new Group;
+$active->church_id = $church->id;
+$active->church_id = 1;
+$active->name = 'Active';
+$active->description = "People actively attending the church";
+$active->save();
+$prayer = new Group;
+$prayer->church_id = 1;
+$prayer->name = "Prayer Requests"
+$prayer->description = "People who receive the church's prayer requests.";
+$prayer->save();
+exit

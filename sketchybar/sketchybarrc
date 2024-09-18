@@ -4,6 +4,7 @@
 # For a (much) more advanced configuration example see my dotfiles:
 # https://github.com/FelixKratz/dotfiles
 #!/bin/bash
+sketchybar --add event aerospace_workspace_change
 
 source "$CONFIG_DIR/colors.sh" # Loads all defined colors
 

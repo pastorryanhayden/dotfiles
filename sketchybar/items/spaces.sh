@@ -1,23 +1,16 @@
 #!/bin/bash
 
-SPACE_SIDS=(1 2 3 4 5 6 7 8 9 10)
+source "$CONFIG_DIR/colors.sh" # Loads all defined colors
 
-for sid in "${SPACE_SIDS[@]}"; do
-	sketchybar --add space space.$sid center \
-		--set space.$sid space=$sid \
-		icon=$sid \
-		label.font="sketchybar-app-font:Regular:16.0" \
-		label.padding_right=20 \
-		label.y_offset=-1 \
-		icon.color=$TEXT_COLOR \
-		script="$PLUGIN_DIR/space.sh"
+for sid in $(aerospace list-workspaces --all); do
+	sketchybar --add item space.$sid center \
+		--subscribe space.$sid aerospace_workspace_change \
+		--set space.$sid \
+		background.color=$ACCENT_COLOR \
+		background.corner_radius=5 \
+		background.height=20 \
+		background.drawing=off \
+		label="$sid" \
+		click_script="aerospace workspace $sid" \
+		script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 done
-
-sketchybar --add item space_separator left \
-	--set space_separator icon="􀆊" \
-	icon.color=$ACCENT_COLOR \
-	icon.padding_left=4 \
-	label.drawing=off \
-	background.drawing=off \
-	script="$PLUGIN_DIR/space_windows.sh" \
-	--subscribe space_separator space_windows_change
