@@ -108,26 +108,26 @@ alt-shift-l = 'move right'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-b = 'workspace b' # Browser
-alt-t = 'workspace t' # terminal
-alt-c = 'workspace c' # communication
-alt-s = 'workspace s' # streaming
-alt-m = 'workspace m' # music
-alt-f = 'workspace f' # files
-alt-n = 'workspace n' # notes
-alt-d = 'workspace d' # database
-alt-e = 'workspace e' # everything else
+alt-b = 'workspace B' # Browser
+alt-t = 'workspace T' # terminal
+alt-c = 'workspace C' # communication
+alt-s = 'workspace S' # streaming
+alt-m = 'workspace M' # music
+alt-f = 'workspace F' # files
+alt-n = 'workspace N' # notes
+alt-d = 'workspace D' # database
+alt-e = 'workspace E' # everything else
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-b = 'move-node-to-workspace b'
-alt-shift-t = 'move-node-to-workspace t'
-alt-shift-c = 'move-node-to-workspace c'
-alt-shift-s = 'move-node-to-workspace s'
-alt-shift-m = 'move-node-to-workspace m'
-alt-shift-f = 'move-node-to-workspace f'
-alt-shift-n = 'move-node-to-workspace n'
-alt-shift-d = 'move-node-to-workspace d'
-alt-shift-e = 'move-node-to-workspace e'
+alt-shift-b = 'move-node-to-workspace B'
+alt-shift-t = 'move-node-to-workspace T'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-s = 'move-node-to-workspace S'
+alt-shift-m = 'move-node-to-workspace M'
+alt-shift-f = 'move-node-to-workspace F'
+alt-shift-n = 'move-node-to-workspace N'
+alt-shift-d = 'move-node-to-workspace D'
+alt-shift-e = 'move-node-to-workspace E'
 
 cmd-h = []     # Disable "hide application"
 cmd-alt-h = [] # Disable "hide others"
@@ -142,15 +142,15 @@ cmd-alt-shift-c = 'reload-config'
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [workspace-to-monitor-force-assignment]
-t = 1
-n = 1
-d = 1
-e = 1
-b = 2
-c = 2
-s = 2
-m = 2
-f = 2
+T = 1
+N = 1
+D = 1
+E = 1
+B = 2
+C = 2
+S = 2
+M = 2
+F = 2
 
 
 # 'service' binding mode declaration.
@@ -174,29 +174,29 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
 # Move system settings to the everything workspace
 if.app-id = 'com.apple.systempreferences'
-run = ['layout floating', 'move-node-to-workspace e']
+run = ['layout floating', 'move-node-to-workspace E']
 
 # Move browsers to the browser workspace
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = ['move-node-to-workspace b']
+run = ['move-node-to-workspace B']
 
 # Move browsers to the browser workspace
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = ['move-node-to-workspace b']
+run = ['move-node-to-workspace B']
 
 # Move obsidian to the notes workspace
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = ['move-node-to-workspace n']
+run = ['move-node-to-workspace N']
 
 # Move wezterm to the terminal workspace
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-run = ['move-node-to-workspace t']
+run = ['move-node-to-workspace T']
 
 # Move pages to the design workspace
 [[on-window-detected]]
 if.app-id = 'com.apple.iWork.Pages'
-run = ['move-node-to-workspace p']
+run = ['move-node-to-workspace D']
